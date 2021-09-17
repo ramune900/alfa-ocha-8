@@ -275,7 +275,7 @@ STAGE3-3追加　ここまで -->
       <!-- STAGE4　ここから -->
       <div v-if="next['stage3']" id="sectionStage4" class="stage">
 
-        <!-- STAGE3-1問題セクション　ここから -->
+        <!-- STAGE4-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：</span>家庭科室の課題とは</h2>
@@ -295,10 +295,10 @@ STAGE3-3追加　ここまで -->
             <h2 class="section-title"><span class="section-title__stage">STAGE：4</span>キーワードを入力</h2>
             <!-----------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。
-              v-on:answer-input="answerInput($event, 'stage4', 1, 'final')" は送信ボタンをクリックした時の動作を決める関数です。
+              v-on:answer-input="answerInput($event, 'stage4', 1, ')" は送信ボタンをクリックした時の動作を決める関数です。
               4番目の引数 'final' は最終ステージを表します。
             ------------------------------------------------------------------------------------------------------------------>
-            <answer-input v-bind:correct="correctAnswer['stage4']['q1']" v-on:answer-input="answerInput($event, 'stage4', 1, 'final')"></answer-input>
+            <answer-input v-bind:correct="correctAnswer['stage4']['q1']" v-on:answer-input="answerInput($event, 'stage4', 1, ')"></answer-input>
             <a class="link-hint" href="hint4.html" target="hint4">ヒントをみる ></a>
           </div>
         </section>
@@ -377,7 +377,7 @@ STAGE4-3追加　ここまで -->
               v-on:answer-input="answerInput($event, 'stage5', 1, 'final')" は送信ボタンをクリックした時の動作を決める関数です。
               4番目の引数 'final' は最終ステージを表します。
             ------------------------------------------------------------------------------------------------------------------>
-            <answer-input v-bind:correct="correctAnswer['stage5']['q1']" v-on:answer-input="answerInput($event, 'stage5', 1, 'final')"></answer-input>
+            <answer-input v-bind:correct="correctAnswer['stage5']['q1']" v-on:answer-input="answerInput($event, 'stage5', 1,)"></answer-input>
             <a class="link-hint" href="hint５.html" target="hint5">ヒントをみる ></a>
           </div>
         </section>
