@@ -194,8 +194,8 @@ Youtube貼り付けここまで -->
       <!-- STAGE2　ここまで -->
       
       
-         <!-- STAGE1　ここから -->
-      <div id="sectionStage3" class="stage">
+         <!-- STAGE3　ここから -->
+       <div v-if="next['stage2']" id="sectionStage3" class="stage">
 
         <!-- STAGE1問題セクション　ここから -->
         <section class="section">
@@ -248,7 +248,7 @@ Youtube貼り付けここまで -->
           v-if="clear['stage1']"はclear['stage1']がtrueになったら表示します。
           v-bind:class="{isClear:clear['stage1']}"はclear['stage1']がtrueになったら「isClear」クラスを追加します。
         -------------------------------------------------------------------------------------------------------->
-        <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
+        <section v-if="clear['stage3']" v-bind:class="{isClear:clear['stage3']}"  class="section section--clear bg-color--gray">
          <h1 class="main-title"><img src="assets/images/0402124729_5ca2db5156ff8.jpg" alt="動画URL欄"></h1>
           <div class="container">
             <div class="clear-message">
