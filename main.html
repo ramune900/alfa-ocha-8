@@ -194,22 +194,24 @@ Youtube貼り付けここまで -->
       <!-- STAGE2　ここまで -->
       
       
-         <!-- STAGE3　ここから -->
-       <div v-if="next['stage2']" id="sectionStage3" class="stage">
-
-        <!-- STAGE1問題セクション　ここから -->
-        <section class="section">
-          <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>親友から届いた謎を解いてみよう！</h2>
-            <p class="text-center">『電車にこんな謎が？奇妙だなぁ..。この謎は簡単だ！とりあえず答えを送ろう。』<br>
-              下の画像の謎を解き、キーワード欄に答えを入力しよう。</p>
-            <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
-  
+       <!-- STAGE３　ここから -->
+      <!---------------------------------------------------------------------
+        クリア画面の「次のステージへ」ボタンをクリックしたら表示します。
+        v-if="next['stage1']"はnext['stage1']がtrueになったら表示します。
+      ----------------------------------------------------------------------->
+      <div v-if="next['stage2']" id="sectionStage3" class="stage">
+        <section>
+          <div class="section">
             <div class="container">
-              <figure class="image__container">
-                <img src="assets/images/nazo1.png" alt="">
-              </figure>
-                
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>黒板に書かれている謎を解け！</h2>
+              <p class="text-center">家庭科室に入ることができた！<br>
+                すぐに目に入ったのは黒板にある４つの謎。<br>
+                これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+            </div>
+          </div>
+          <div class="stage-column__container section bg-color--keycolor">
+            <div class="container">
+              <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
  <!--  YouTube貼り付け
               <div class="youtube__container">
                 <div class="youtube">
@@ -252,7 +254,7 @@ Youtube貼り付けここまで -->
          <h1 class="main-title"><img src="assets/images/0402124729_5ca2db5156ff8.jpg" alt="動画URL欄"></h1>
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：１  正解！</div>
+              <div class="clear-message__title">STAGE：3  正解！</div>
               <div class="clear-message__content">簡単だ！答えは「一」だ！親友が答えを入力すると…<br>
                 「ピッピッピッピッ」という音と共に<br>
                 謎のカウントダウンが始まった。<br>
