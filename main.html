@@ -352,7 +352,7 @@ STAGE4-3追加　ここまで -->
       <!-- STAGE4　ここまで -->
       
       <!-- STAGE5　ここから -->
-      <div v-if="next['stage4']" id="sectionStage3" class="stage">
+      <div v-if="next['stage4']" id="sectionStage5" class="stage">
 
         <!-- STAGE5-1問題セクション　ここから -->
         <section class="section">
@@ -377,7 +377,7 @@ STAGE4-3追加　ここまで -->
               v-on:answer-input="answerInput($event, 'stage3', 1, 'final')" は送信ボタンをクリックした時の動作を決める関数です。
               4番目の引数 'final' は最終ステージを表します。
             ------------------------------------------------------------------------------------------------------------------>
-            <answer-input v-bind:correct="correctAnswer['stage3']['q1']" v-on:answer-input="answerInput($event, 'stage5', 1, 'final')"></answer-input>
+            <answer-input v-bind:correct="correctAnswer['stage5']['q1']" v-on:answer-input="answerInput($event, 'stage5', 1, 'final')"></answer-input>
             <a class="link-hint" href="hint５.html" target="hint5">ヒントをみる ></a>
           </div>
         </section>
@@ -419,8 +419,8 @@ STAGE5-2追加ここまで -->
           <div class="container">
             <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
 
-            <answer-input v-bind:correct="correctAnswer['stage3']['q3']" v-on:answer-input="answerInput($event, 'stage3', 3, 'final')"></answer-input>
-            <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる ></a>
+            <answer-input v-bind:correct="correctAnswer['stage5']['q3']" v-on:answer-input="answerInput($event, 'stage5', 3, 'final')"></answer-input>
+            <a class="link-hint" href="hint5.html" target="hint5">ヒントをみる ></a>
           </div>
         </section>
 
