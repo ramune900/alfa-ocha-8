@@ -61,11 +61,17 @@
               1番麺の引数 $event は正解、不正解の判定を受け取る変数です。
               []、()の間違い、''の抜けがあると動きません。
             ------------------------------------------------------------------------------------------------------------>
-            <answer-input v-bind:correct="correctAnswer['stage1']['q1']" v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
-
-            <a class="link-hint" href="hint1.html" target="hint1">ヒントをみる ></a>
-          </div>
-        </section>
+            <div class="answer__container">
+              <div class="answer">
+                <input type="text" placeholder="ここに答えを入力しよう>
+                                                </div>
+                                                <!--v-if-->
+                                                <button>送信</button>
+                                                <!--v-if-->
+                                                </div>
+                                                <a class="link-hint" href="hint1.html" target="hint1">ヒントをみる</a>
+                                                                                                     </div>
+                                                                                                     </section>
         <!-- STAGE1解答入力セクション　ここまで -->
 
         <!-- STAGE1クリア画面　ここから -->
@@ -93,16 +99,12 @@
       <!-- STAGE1　ここまで -->
 
       <!-- STAGE2　ここから -->
-      <!---------------------------------------------------------------------
-        クリア画面の「次のステージへ」ボタンをクリックしたら表示します。
-        v-if="next['stage1']"はnext['stage1']がtrueになったら表示します。
-      ----------------------------------------------------------------------->
       <div v-if="next['stage1']" id="sectionStage2" class="stage">
         <section>
           <div class="section">
             <div class="container">
               <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>警察から届いた謎を解こう！</h2>
-              <p class="text-center">〇〇「犯人がわざわざ自分の家に謎なんか置く？変ね。」<br>
+              <p class="text-center">警「犯人がわざわざ自分の家に謎なんか置く？変ね。」<br>
                 この謎で爆発を阻止できるかは分からないけど、信じて進むしかない！<br>
                 これを解くことで、きっと何か起こるはず...。</p>
             </div>
