@@ -69,14 +69,14 @@
           v-bind:class="{isClear:clear['stage1']}"はclear['stage1']がtrueになったら「isClear」クラスを追加します。
         -------------------------------------------------------------------------------------------------------->
         <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
-         <h1 class="main-title"><img src="assets/images/0402124729_5ca2db5156ff8.jpg" alt="動画URL欄"></h1><br>
+         <h1 class="main-title"><img src="assets/images/メモ" alt="動画URL欄"></h1><br>
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：１  正解！</div>
               <div class="clear-message__content">簡単だ！答えは「一」だ！親友が答えを入力すると…<br>
-                「ピッピッピッピッ」という音と共に<br>
-                謎のカウントダウンが始まった。<br>
-                『このカウントダウンは何だろう…？』</div>
+                「ピッピッピッピッ」という音。<br>
+                テレビのニュースで電車に爆弾がつけられていると報道が...。<br>
+                まさか...爆弾のタイムリミットがスタートした！？</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -93,9 +93,9 @@
           <div class="section">
             <div class="container">
               <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>警察から届いた謎を解こう！</h2>
-              <p class="text-center">〇〇「犯人がわざわざ自分の家に謎なんか置く？変ね。」<br>
-                この謎で爆発を阻止できるかは分からないけど、信じて進むしかない！<br>
-                これを解くことで、きっと何か起こるはず...。</p>
+              <p class="text-center">こんにちは探偵さん、私は警察。あなたはこの事件の爆弾を解除できるかしら？<br>
+                『この謎で爆発を阻止できるかは分からないけど、進むしかない！<br>
+                これを解くことで、きっと何か起こるはず...。』</p>
               
                 <div class="column">
                   <figure class="image__container">
@@ -122,9 +122,9 @@
         <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：2　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__title">STAGE：2　正解！</div>
+              <div class="clear-message__content">警「犯人宅にあった日記に[16]を入れたら、開いたわ。<br>
+                3つ目の謎も挟んであった！」</div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -138,10 +138,10 @@
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>警察から届いた謎を解こう！</h2>
-              <p class="text-center">〇〇「犯人がわざわざ自分の家に謎なんか置く？変ね。」<br>
-                この謎で爆発を阻止できるかは分からないけど、信じて進むしかない！<br>
-                これを解くことで、きっと何か起こるはず...。</p>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>日記にあった問題を解こう！</h2>
+              <p class="text-center">警「犯人がわざわざ自分の家に謎なんか置く？変ね。<br>
+                この日記は、犯人の過去が全部書いてあるわ...。犯人の過去が今回の事件に関係しているかも。」<br>
+                『犯人の過去？それにしても、なんでこんな事件を...。』</p>
               
                 <div class="column">
                   <figure class="image__container">
@@ -168,9 +168,11 @@
         <section v-if="clear['stage3']" v-bind:class="{isClear:clear['stage3']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：3　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__title">STAGE：3　正解！</div>
+              <div class="clear-message__content">警「犯人と思われる匿名メールが届いた！<br>
+             
+                これが次の謎みたい...。」</div>
+             
                 <button v-on:click="nextStage('stage3')" onclick="location.href='#sectionStage4'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
