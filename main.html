@@ -80,6 +80,9 @@
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
+          </div>
+      </div>
+            
         </section>
         <!-- STAGE1クリア画面　ここまで -->
 
@@ -104,6 +107,8 @@
                   
             </div>
           </div>
+            </div>
+          </div>
           <div class="stage-column__container section bg-color--keycolor">
             <div class="container">
               <h2 class="section-title">
@@ -113,6 +118,7 @@
                   <!-- STAGE2解答入力セクション　ここから -->
                   <answer-input v-bind:correct="correctAnswer['stage2']['q1']" v-on:answer-input="answerInput($event, 'stage2', 1)"></answer-input>
                    </div>
+              </div>
             <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
           </div>
         </section>
@@ -128,6 +134,8 @@
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
+          </div>
+        </div>
         </section>
         <!-- STAGE２クリア画面　ここまで -->
       <!-- STAGE2　ここまで -->
@@ -147,7 +155,8 @@
                   <figure class="image__container">
                     <img src="assets/images/nazo3.png" alt="">
                   </figure>
-                  
+                  </div>
+              </div>
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
@@ -159,6 +168,7 @@
                   <!-- STAGE3解答入力セクション　ここから -->
                   <answer-input v-bind:correct="correctAnswer['stage3']['q1']" v-on:answer-input="answerInput($event, 'stage3', 1)"></answer-input>
                    </div>
+              </div>
             <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる ></a>
           </div>
         </section>
@@ -176,6 +186,8 @@
                 <button v-on:click="nextStage('stage3')" onclick="location.href='#sectionStage4'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
+          </div>
+         </div>
         </section>
         <!-- STAGE3クリア画面　ここまで -->
            <!-- STAGE3　ここまで -->
